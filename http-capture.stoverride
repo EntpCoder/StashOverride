@@ -2,3 +2,8 @@ name: '测试抓包'
 desc: '测试-描述'
 rules:
   - DOMAIN-SUFFIX,baidu.com,🚧Proxy
+http:
+  mitm:
+    - '*.elog.com'
+  force-http-engine:
+    - '*.elog.com'
