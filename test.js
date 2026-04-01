@@ -22,12 +22,6 @@ function getScriptResponseBody() {
 
 async function main() {
     console.log(`[Url-YASO]:${$request.url}`)
-    let ct = $response.headers['Content-Type']
-    if (ct.includes("application/json")) {
-        let body = getScriptResponseBody()
-        let jsonBody = parseJsonBody(body)
-        console.log(`[Response-YASO-JSON]:${JSON.stringify(jsonBody)}`)
-    }
 }
 
 (async () => {
