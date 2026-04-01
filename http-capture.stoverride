@@ -1,4 +1,4 @@
-name: '抓包测试'
+name: 'yaso-测试覆写文件'
 desc: '测试-描述'
 rules:
   - DOMAIN-SUFFIX,baidu.com,🚧Proxy
@@ -17,3 +17,7 @@ http:
       binary-mode: false
       max-size: 2097152
       debug: false
+script-providers:
+  http-capture-all:
+    url: https://raw.githubusercontent.com/EntpCoder/StashOverride/refs/heads/master/http-capture.js
+    interval: 86400
