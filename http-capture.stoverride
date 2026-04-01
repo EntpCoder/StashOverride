@@ -4,9 +4,9 @@ rules:
   - DOMAIN-SUFFIX,baidu.com,🚧Proxy
 http:
   mitm:
-    - '*.elog.com'
+    - '*.elong.com'
   force-http-engine:
-    - '*.elog.com'
+    - '*.elong.com'
   script:
     - match: ^https://.*elong\.com
       name: http-capture-all
