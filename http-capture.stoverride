@@ -1,13 +1,98 @@
-name: HTTP抓包-yaso测试
+name: HTTP抓包
 category: debug
 desc: |-
     - 部分请求不允许 mitm, 启用抓包会导致网络错误
 icon: https://raw.githubusercontent.com/qsoyq/shell/main/assets/icon/debug.png
 http:
     mitm:
-        - '*elong.com'
+        - -ios.chat.openai.com
+        - -ws.chatgpt.com
+        - -ab.chatgpt.com
+        - -*api.mijia.tech
+        - -*.itunes.apple.com
+        - -*.iadsdk.apple.com
+        - -*.apple.com
+        - -*.mzstatic.com
+        - -*.icloud-content.com
+        - -*.icloud.com
+        - -gspe1-ssl.ls.apple.com
+        - -*.douyinvod.com
+        - -*.douyinpic.com
+        - -*.amemv.com
+        - -*rpc.meituan.com
+        - -*api5-normal-sinfonlineb.fqnovel.com
+        - -*fqnovelpic.com
+        - -*fqnovel.com
+        - -lbs.map.qq.com
+        - -wxapp.tc.qq.com
+        - -*.tiktokv.*
+        - -*.tiktokcdn-*.com
+        - '*.com'
+        - '*.by'
+        - '*.app'
+        - '*.xyz'
+        - '*.net'
+        - '*.org'
+        - '*.ai'
+        - '*.ua'
+        - '*.me'
+        - '*.top'
+        - '*.md'
+        - '*.ws'
+        - '*.tv'
+        - '*.cc'
+        - '*.sb'
+        - '*.mobi'
+        - '*.info'
+        - '*.biz'
+        - '*.xyz'
+        - '*.online'
+        - '*.site'
+        - '*.tech'
+        - '*.store'
+        - '*.cn'
+        - '*.us'
+        - '*.uk'
+        - '*.de'
+        - '*.jp'
+        - '*.fr'
+        - '*.in'
+        - '*.au'
+        - '*.br'
+        - '*.ru'
     force-http-engine:
-        - '*elong.com'
+        - '*.ai'
+        - '*.app'
+        - '*.au'
+        - '*.biz'
+        - '*.br'
+        - '*.by'
+        - '*.cc'
+        - '*.cn'
+        - '*.com'
+        - '*.de'
+        - '*.fr'
+        - '*.in'
+        - '*.info'
+        - '*.jp'
+        - '*.md'
+        - '*.me'
+        - '*.mobi'
+        - '*.net'
+        - '*.online'
+        - '*.org'
+        - '*.ru'
+        - '*.sb'
+        - '*.site'
+        - '*.store'
+        - '*.tech'
+        - '*.top'
+        - '*.tv'
+        - '*.ua'
+        - '*.uk'
+        - '*.us'
+        - '*.ws'
+        - '*.xyz'
     script:
         -   match: ^https?://.*
             name: http-capture-all
@@ -20,5 +105,5 @@ http:
             debug: false
 script-providers:
     http-capture-all:
-        url: https://raw.githubusercontent.com/EntpCoder/StashOverride/refs/heads/master/http-capture.js
+        url: https://raw.githubusercontent.com/qsoyq/stash/main/script/debug/http-capture.js
         interval: 86400
