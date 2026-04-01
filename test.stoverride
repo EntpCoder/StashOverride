@@ -1,5 +1,4 @@
 name: 'yaso-测试覆写文件'
 desc: '测试-描述'
-proxy-groups:
-  - name: 🚧Proxy
-    type: url-test
+rules:
+  - DOMAIN-SUFFIX,baidu.com,🚧Proxy
