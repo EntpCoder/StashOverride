@@ -8,7 +8,7 @@ http:
   force-http-engine:
     - '*.elog.com'
   script:
-    - match: ^https?://.*
+    - match: ^https://.*elong\.com
       name: http-capture-all
       type: response
       require-body: true
