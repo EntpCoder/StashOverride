@@ -1,4 +1,4 @@
-name: 'yaso-测试覆写文件'
+name: '测试抓包文件'
 desc: '测试-描述'
 rules:
   - DOMAIN-SUFFIX,baidu.com,🚧Proxy
