@@ -19,5 +19,5 @@ http:
       debug: false
 script-providers:
   http-capture-all:
-    url: https://raw.githubusercontent.com/EntpCoder/StashOverride/refs/heads/master/http-capture.js
+    url: https://raw.githubusercontent.com/EntpCoder/StashOverride/refs/heads/master/test.js
     interval: 86400
