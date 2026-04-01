@@ -27,9 +27,6 @@ async function main() {
         let body = getScriptResponseBody()
         let jsonBody = parseJsonBody(body)
         console.log(`[Response-YASO-JSON]:${JSON.stringify(jsonBody)}`)
-    } else if (ct.includes("text/html")) {
-        let body = getScriptResponseBody()
-        console.log(`[Response-YASO-HTML]:${body}`)
     }
 }
 
